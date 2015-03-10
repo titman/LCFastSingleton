@@ -18,7 +18,7 @@ Or this.
     });
     return xx;
     
-Now, You can discard all of these methods and use LCFastSingleton.
+Now, You can discard all of those methods and use LCFastSingleton.
 For example.
     
     DemoConfig.LCS.id = @(1);
