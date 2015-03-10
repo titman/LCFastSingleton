@@ -3,7 +3,7 @@ Quickly create singleton, and centralized management.
 
 You perhaps create every singleton use this way.
 
-    static XXX xx = nil;
+    static XXX * xx = nil;
     if (!xx) {
         xx = [[XXX alloc] init];
     }
