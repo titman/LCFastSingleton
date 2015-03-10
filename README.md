@@ -4,11 +4,9 @@ Quickly create singleton, and centralized management.
 You may be create every singleton use this way.
 
     static XXX xx = nil;
-    
     if (!xx) {
         xx = [[XXX alloc] init];
     }
-    
     return xx;
     
 Or this.
@@ -18,17 +16,16 @@ Or this.
     dispatch_once(&onceToken, ^{
         xx = [[XXX alloc] init];
     });
-    
     return xx;
     
 Now, You can discard all of these methods and use LCFastSingleton.
 For example.
     
-        DemoConfig.LCS.id = 1;
-    DemoConfig.LCS.type = 2;
+    DemoConfig.LCS.id = @(1);
+    DemoConfig.LCS.type = @(2);
     DemoConfig.LCS.name = @"3";
     
-    NSLog(@"DemoConfig instance: id=%@, type=%@, name=%@", @(DemoConfig.LCS.id), @(DemoConfig.LCS.type), DemoConfig.LCI.name);
+    NSLog(@"DemoConfig instance: id=%@, type=%@, name=%@", DemoConfig.LCS.id, DemoConfig.LCS.type, DemoConfig.LCI.name);
     
 You can also custom method name on .h file. (Such as DemoConfig.VGS.id)
     
