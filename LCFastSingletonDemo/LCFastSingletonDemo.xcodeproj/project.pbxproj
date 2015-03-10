@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFBFBCE01AAECC2B00854A11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBFBCDF1AAECC2B00854A11 /* main.m */; };
+		BFBFBCE31AAECC2B00854A11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBFBCE21AAECC2B00854A11 /* AppDelegate.m */; };
+		BFBFBCE61AAECC2B00854A11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBFBCE51AAECC2B00854A11 /* ViewController.m */; };
+		BFBFBCE91AAECC2B00854A11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBFBCE71AAECC2B00854A11 /* Main.storyboard */; };
+		BFBFBCEB1AAECC2B00854A11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFBFBCEA1AAECC2B00854A11 /* Images.xcassets */; };
+		BFBFBCEE1AAECC2B00854A11 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFBFBCEC1AAECC2B00854A11 /* LaunchScreen.xib */; };
+		BFBFBCFA1AAECC2C00854A11 /* LCFastSingletonDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBFBCF91AAECC2C00854A11 /* LCFastSingletonDemoTests.m */; };
+		BFBFBD061AAECC7600854A11 /* NSObject+LCFastSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBFBD051AAECC7600854A11 /* NSObject+LCFastSingleton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFBFBCF41AAECC2B00854A11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFBFBCD21AAECC2B00854A11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFBFBCD91AAECC2B00854A11;
+			remoteInfo = LCFastSingletonDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFBFBCDA1AAECC2B00854A11 /* LCFastSingletonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCFastSingletonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBFBCDE1AAECC2B00854A11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFBFBCDF1AAECC2B00854A11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFBFBCE11AAECC2B00854A11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BFBFBCE21AAECC2B00854A11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BFBFBCE41AAECC2B00854A11 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BFBFBCE51AAECC2B00854A11 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BFBFBCE81AAECC2B00854A11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFBFBCEA1AAECC2B00854A11 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BFBFBCED1AAECC2B00854A11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BFBFBCF31AAECC2B00854A11 /* LCFastSingletonDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCFastSingletonDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBFBCF81AAECC2B00854A11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFBFBCF91AAECC2C00854A11 /* LCFastSingletonDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCFastSingletonDemoTests.m; sourceTree = "<group>"; };
+		BFBFBD041AAECC7600854A11 /* NSObject+LCFastSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LCFastSingleton.h"; sourceTree = "<group>"; };
+		BFBFBD051AAECC7600854A11 /* NSObject+LCFastSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LCFastSingleton.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFBFBCD71AAECC2B00854A11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFBFBCF01AAECC2B00854A11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFBFBCD11AAECC2B00854A11 = {
+			isa = PBXGroup;
+			children = (
+				BFBFBCDC1AAECC2B00854A11 /* LCFastSingletonDemo */,
+				BFBFBCF61AAECC2B00854A11 /* LCFastSingletonDemoTests */,
+				BFBFBCDB1AAECC2B00854A11 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFBFBCDB1AAECC2B00854A11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFBFBCDA1AAECC2B00854A11 /* LCFastSingletonDemo.app */,
+				BFBFBCF31AAECC2B00854A11 /* LCFastSingletonDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFBFBCDC1AAECC2B00854A11 /* LCFastSingletonDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BFBFBD031AAECC7600854A11 /* LCFastSingleton */,
+				BFBFBCE11AAECC2B00854A11 /* AppDelegate.h */,
+				BFBFBCE21AAECC2B00854A11 /* AppDelegate.m */,
+				BFBFBCE41AAECC2B00854A11 /* ViewController.h */,
+				BFBFBCE51AAECC2B00854A11 /* ViewController.m */,
+				BFBFBCE71AAECC2B00854A11 /* Main.storyboard */,
+				BFBFBCEA1AAECC2B00854A11 /* Images.xcassets */,
+				BFBFBCEC1AAECC2B00854A11 /* LaunchScreen.xib */,
+				BFBFBCDD1AAECC2B00854A11 /* Supporting Files */,
+			);
+			path = LCFastSingletonDemo;
+			sourceTree = "<group>";
+		};
+		BFBFBCDD1AAECC2B00854A11 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFBFBCDE1AAECC2B00854A11 /* Info.plist */,
+				BFBFBCDF1AAECC2B00854A11 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFBFBCF61AAECC2B00854A11 /* LCFastSingletonDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFBFBCF91AAECC2C00854A11 /* LCFastSingletonDemoTests.m */,
+				BFBFBCF71AAECC2B00854A11 /* Supporting Files */,
+			);
+			path = LCFastSingletonDemoTests;
+			sourceTree = "<group>";
+		};
+		BFBFBCF71AAECC2B00854A11 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFBFBCF81AAECC2B00854A11 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFBFBD031AAECC7600854A11 /* LCFastSingleton */ = {
+			isa = PBXGroup;
+			children = (
+				BFBFBD041AAECC7600854A11 /* NSObject+LCFastSingleton.h */,
+				BFBFBD051AAECC7600854A11 /* NSObject+LCFastSingleton.m */,
+			);
+			name = LCFastSingleton;
+			path = ../../LCFastSingleton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFBFBCD91AAECC2B00854A11 /* LCFastSingletonDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFBFBCFD1AAECC2C00854A11 /* Build configuration list for PBXNativeTarget "LCFastSingletonDemo" */;
+			buildPhases = (
+				BFBFBCD61AAECC2B00854A11 /* Sources */,
+				BFBFBCD71AAECC2B00854A11 /* Frameworks */,
+				BFBFBCD81AAECC2B00854A11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LCFastSingletonDemo;
+			productName = LCFastSingletonDemo;
+			productReference = BFBFBCDA1AAECC2B00854A11 /* LCFastSingletonDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFBFBCF21AAECC2B00854A11 /* LCFastSingletonDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFBFBD001AAECC2C00854A11 /* Build configuration list for PBXNativeTarget "LCFastSingletonDemoTests" */;
+			buildPhases = (
+				BFBFBCEF1AAECC2B00854A11 /* Sources */,
+				BFBFBCF01AAECC2B00854A11 /* Frameworks */,
+				BFBFBCF11AAECC2B00854A11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFBFBCF51AAECC2B00854A11 /* PBXTargetDependency */,
+			);
+			name = LCFastSingletonDemoTests;
+			productName = LCFastSingletonDemoTests;
+			productReference = BFBFBCF31AAECC2B00854A11 /* LCFastSingletonDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFBFBCD21AAECC2B00854A11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Licheng Guo . http://nsobject.me/";
+				TargetAttributes = {
+					BFBFBCD91AAECC2B00854A11 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					BFBFBCF21AAECC2B00854A11 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = BFBFBCD91AAECC2B00854A11;
+					};
+				};
+			};
+			buildConfigurationList = BFBFBCD51AAECC2B00854A11 /* Build configuration list for PBXProject "LCFastSingletonDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFBFBCD11AAECC2B00854A11;
+			productRefGroup = BFBFBCDB1AAECC2B00854A11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFBFBCD91AAECC2B00854A11 /* LCFastSingletonDemo */,
+				BFBFBCF21AAECC2B00854A11 /* LCFastSingletonDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFBFBCD81AAECC2B00854A11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBFBCE91AAECC2B00854A11 /* Main.storyboard in Resources */,
+				BFBFBCEE1AAECC2B00854A11 /* LaunchScreen.xib in Resources */,
+				BFBFBCEB1AAECC2B00854A11 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFBFBCF11AAECC2B00854A11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFBFBCD61AAECC2B00854A11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBFBCE61AAECC2B00854A11 /* ViewController.m in Sources */,
+				BFBFBD061AAECC7600854A11 /* NSObject+LCFastSingleton.m in Sources */,
+				BFBFBCE31AAECC2B00854A11 /* AppDelegate.m in Sources */,
+				BFBFBCE01AAECC2B00854A11 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFBFBCEF1AAECC2B00854A11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBFBCFA1AAECC2C00854A11 /* LCFastSingletonDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFBFBCF51AAECC2B00854A11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFBFBCD91AAECC2B00854A11 /* LCFastSingletonDemo */;
+			targetProxy = BFBFBCF41AAECC2B00854A11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFBFBCE71AAECC2B00854A11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFBFBCE81AAECC2B00854A11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFBFBCEC1AAECC2B00854A11 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFBFBCED1AAECC2B00854A11 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFBFBCFB1AAECC2C00854A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BFBFBCFC1AAECC2C00854A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFBFBCFE1AAECC2C00854A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LCFastSingletonDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BFBFBCFF1AAECC2C00854A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LCFastSingletonDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BFBFBD011AAECC2C00854A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LCFastSingletonDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LCFastSingletonDemo.app/LCFastSingletonDemo";
+			};
+			name = Debug;
+		};
+		BFBFBD021AAECC2C00854A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LCFastSingletonDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LCFastSingletonDemo.app/LCFastSingletonDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFBFBCD51AAECC2B00854A11 /* Build configuration list for PBXProject "LCFastSingletonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBFBCFB1AAECC2C00854A11 /* Debug */,
+				BFBFBCFC1AAECC2C00854A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFBFBCFD1AAECC2C00854A11 /* Build configuration list for PBXNativeTarget "LCFastSingletonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBFBCFE1AAECC2C00854A11 /* Debug */,
+				BFBFBCFF1AAECC2C00854A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BFBFBD001AAECC2C00854A11 /* Build configuration list for PBXNativeTarget "LCFastSingletonDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBFBD011AAECC2C00854A11 /* Debug */,
+				BFBFBD021AAECC2C00854A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFBFBCD21AAECC2B00854A11 /* Project object */;
+}
