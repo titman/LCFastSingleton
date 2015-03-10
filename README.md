@@ -1,7 +1,7 @@
 # LCFastSingleton
 Quickly create singleton, and centralized management.
 
-You may be create every singleton use this way.
+You perhaps create every singleton use this way.
 
     static XXX xx = nil;
     if (!xx) {
