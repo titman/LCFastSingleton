@@ -25,10 +25,10 @@ For example.
     DemoConfig.LCS.type = @(2);
     DemoConfig.LCS.name = @"3";
     
-    NSLog(@"DemoConfig instance: id=%@, type=%@, name=%@", DemoConfig.LCS.id, DemoConfig.LCS.type, DemoConfig.LCI.name);
+    NSLog(@"DemoConfig singleton: id=%@, type=%@, name=%@", DemoConfig.LCS.id, DemoConfig.LCS.type, DemoConfig.LCI.name);
     
 You can also custom method name on .h file. (Such as DemoConfig.VGS.id)
     
-    #define LC_INSTANCE_CUSTOM_METHOD_NAME LCS // You can custom the method name, for example: your project prefix + S.
+    #define LC_SINGLETON_CUSTOM_METHOD_NAME LCS // You can custom the method name, for example: your project prefix + S.
 
     
