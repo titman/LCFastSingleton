@@ -1,5 +1,5 @@
 # LCFastSingleton
-Fast and safe to create singleton, and centralized management. Don't need to add any other code.
+LCFastSingleton allows you to create singletons by a impressively quick way, and centrally manage them, without needing you to enter any other code.
 
 #### If you have used this way to create a singleton case.
 
