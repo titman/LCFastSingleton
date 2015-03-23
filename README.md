@@ -19,8 +19,7 @@ Quickly and safely create singleton, and centralized management. Don't need to a
     return xx;
     
 #### Now, You can discard all of those methods and use LCFastSingleton.
-For example.
-    
+
     DemoConfig.singleton.id = @(1);
     DemoConfig.singleton.type = @(2);
     DemoConfig.singleton.name = @"3";
