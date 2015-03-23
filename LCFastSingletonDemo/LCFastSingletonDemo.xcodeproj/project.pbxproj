@@ -427,6 +427,7 @@
 				BFBFBCFF1AAECC2C00854A11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFBFBD001AAECC2C00854A11 /* Build configuration list for PBXNativeTarget "LCFastSingletonDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +436,7 @@
 				BFBFBD021AAECC2C00854A11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

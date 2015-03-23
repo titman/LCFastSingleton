@@ -20,8 +20,17 @@
 
 @implementation DemoConfig
 
-@end
+-(instancetype) singletonInit
+{
+    // Default settings.
+    self.id = 1;
+    self.type = 1;
+    self.name = @"1";
+    
+    return self;
+}
 
+@end
 
 
 
@@ -34,7 +43,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    
     
     
     // Just Example.
@@ -52,8 +60,11 @@
     NSLog(@"NSDateFormatter singleton: dateFormat=%@", NSDateFormatter.LCS.dateFormat);
     
     
+    DemoConfig * newDemoConfig = [[DemoConfig alloc] init];
     
     
+    // The singleton is safe if the pointer is the same.
+    NSLog(@"LCS P: %p Alloc newDemoConfig P:%p", DemoConfig.LCS, newDemoConfig);
     
     return YES;
 }
