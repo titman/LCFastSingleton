@@ -1,7 +1,7 @@
 # LCFastSingleton
-Quickly create singleton, and centralized management.
+Quickly and safely create singleton, and centralized management. Don't need to add any other code.
 
-You perhaps create every singleton use this way.
+#### You perhaps create every singleton use this way.
 
     static XXX * xx = nil;
     if (!xx) {
@@ -9,7 +9,7 @@ You perhaps create every singleton use this way.
     }
     return xx;
     
-Or this.
+#### Or this.
 
     static XXX * xx = nil;
     static dispatch_once_t onceToken;
@@ -18,17 +18,17 @@ Or this.
     });
     return xx;
     
-Now, You can discard all of those methods and use LCFastSingleton.
+####Now, You can discard all of those methods and use LCFastSingleton.
 For example.
     
-    DemoConfig.LCS.id = @(1);
-    DemoConfig.LCS.type = @(2);
-    DemoConfig.LCS.name = @"3";
+    DemoConfig.singleton.id = @(1);
+    DemoConfig.singleton.type = @(2);
+    DemoConfig.singleton.name = @"3";
     
-    NSLog(@"DemoConfig singleton: id=%@, type=%@, name=%@", DemoConfig.LCS.id, DemoConfig.LCS.type, DemoConfig.LCI.name);
+    NSLog(@"DemoConfig singleton: id=%@, type=%@, name=%@", DemoConfig.singleton.id, DemoConfig.singleton.type, DemoConfig.singleton.name);
     
-You can also custom method name on .h file. (Such as DemoConfig.VGS.id)
+You can also custom method name on .h file. (Such as DemoConfig.XXSingleton.id)
     
-    #define LC_SINGLETON_CUSTOM_METHOD_NAME LCS // You can custom the method name, for example: your project prefix + S.
+    #define LC_SINGLETON_CUSTOM_METHOD_NAME singleton // You can custom the method name, for example: "singleton".
 
     
