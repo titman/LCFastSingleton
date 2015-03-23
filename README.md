@@ -1,7 +1,7 @@
 # LCFastSingleton
-Quickly and safely create singleton, and centralized management. Don't need to add any other code.
+Fast and safe to create singleton, and centralized management. Don't need to add any other code.
 
-#### You perhaps create every singleton use this way.
+#### If you have used this way to create a singleton case.
 
     static XXX * xx = nil;
     if (!xx) {
@@ -26,13 +26,13 @@ Quickly and safely create singleton, and centralized management. Don't need to a
     
     NSLog(@"DemoConfig singleton: id=%@, type=%@, name=%@", DemoConfig.singleton.id, DemoConfig.singleton.type, DemoConfig.singleton.name);
     
-#### LCFastSingleton is safely.  
+#### Safety LCFastSingleton.  
 
     DemoConfig * newDemoConfig = [[DemoConfig alloc] init];
-    // The singleton is safely if the pointer same.
+    // The singleton is safe if the pointer same.
     NSLog(@"LCS P: %p Alloc newDemoConfig P:%p", DemoConfig.singleton, newDemoConfig);
     
-#### You can also custom method name on .h file. (Such as DemoConfig.XXSingleton.id)
+#### You can also custom the method name on .h file. (Such as DemoConfig.XXSingleton.id)
     
     #define LC_SINGLETON_CUSTOM_METHOD_NAME singleton // You can custom the method name, for example: "singleton".
 
