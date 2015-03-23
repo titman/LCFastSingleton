@@ -45,10 +45,14 @@
 
     
     
+    NSLog(@"%@",DemoConfig.singleton.description);
+    
+    
     // Just Example.
     DemoConfig.singleton.id = 1;
     DemoConfig.singleton.type = 2;
     DemoConfig.singleton.name = @"3";
+
     
     NSLog(@"DemoConfig singleton: id=%@, type=%@, name=%@", @(DemoConfig.singleton.id), @(DemoConfig.singleton.type), DemoConfig.singleton.name);
     
