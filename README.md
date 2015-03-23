@@ -18,7 +18,7 @@ Quickly and safely create singleton, and centralized management. Don't need to a
     });
     return xx;
     
-####Now, You can discard all of those methods and use LCFastSingleton.
+#### Now, You can discard all of those methods and use LCFastSingleton.
 For example.
     
     DemoConfig.singleton.id = @(1);
@@ -27,7 +27,13 @@ For example.
     
     NSLog(@"DemoConfig singleton: id=%@, type=%@, name=%@", DemoConfig.singleton.id, DemoConfig.singleton.type, DemoConfig.singleton.name);
     
-You can also custom method name on .h file. (Such as DemoConfig.XXSingleton.id)
+#### LCFastSingleton is safely.  
+
+    DemoConfig * newDemoConfig = [[DemoConfig alloc] init];
+    // The singleton is safely if the pointer same.
+    NSLog(@"LCS P: %p Alloc newDemoConfig P:%p", DemoConfig.singleton, newDemoConfig);
+    
+#### You can also custom method name on .h file. (Such as DemoConfig.XXSingleton.id)
     
     #define LC_SINGLETON_CUSTOM_METHOD_NAME singleton // You can custom the method name, for example: "singleton".
 
