@@ -195,7 +195,7 @@ void MethodSwizzleClass(Class aClass, SEL orig_sel, SEL alt_sel)
     id value = [self.class shareInstanceDatasource][[self.class description]];
     
     if (value) {
-        return [NSString stringWithFormat:@"[LCSingleton] %@",[self descriptionSwizzled]];
+        return [NSString stringWithFormat:@"[LCFastSingleton] %@",[self descriptionSwizzled]];
     }
     
     return [self descriptionSwizzled];
