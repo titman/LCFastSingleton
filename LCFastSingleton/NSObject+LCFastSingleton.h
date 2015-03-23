@@ -33,7 +33,8 @@
 #import <Foundation/Foundation.h>
 
 #undef  LC_SINGLETON_CUSTOM_METHOD_NAME
-#define LC_SINGLETON_CUSTOM_METHOD_NAME LCS // You can custom the method name, for example: "singleton".
+#define LC_SINGLETON_CUSTOM_METHOD_NAME singleton // You can custom the method name, for example: "singleton".
+//#define LC_SINGLETON_CUSTOM_METHOD_NAME LCS
 
 @interface NSObject (LCFastSingleton)
 

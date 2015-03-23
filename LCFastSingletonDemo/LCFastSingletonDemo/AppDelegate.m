@@ -46,25 +46,25 @@
     
     
     // Just Example.
-    DemoConfig.LCS.id = 1;
-    DemoConfig.LCS.type = 2;
-    DemoConfig.LCS.name = @"3";
+    DemoConfig.singleton.id = 1;
+    DemoConfig.singleton.type = 2;
+    DemoConfig.singleton.name = @"3";
     
-    NSLog(@"DemoConfig singleton: id=%@, type=%@, name=%@", @(DemoConfig.LCS.id), @(DemoConfig.LCS.type), DemoConfig.LCS.name);
+    NSLog(@"DemoConfig singleton: id=%@, type=%@, name=%@", @(DemoConfig.singleton.id), @(DemoConfig.singleton.type), DemoConfig.singleton.name);
     
     
     
     // Just a joke.
-    NSDateFormatter.LCS.dateFormat = @"yyyy-MM-dd";
+    NSDateFormatter.singleton.dateFormat = @"yyyy-MM-dd";
     
-    NSLog(@"NSDateFormatter singleton: dateFormat=%@", NSDateFormatter.LCS.dateFormat);
+    NSLog(@"NSDateFormatter singleton: dateFormat=%@", NSDateFormatter.singleton.dateFormat);
     
     
     DemoConfig * newDemoConfig = [[DemoConfig alloc] init];
     
     
     // The singleton is safe if the pointer is the same.
-    NSLog(@"LCS P: %p Alloc newDemoConfig P:%p", DemoConfig.LCS, newDemoConfig);
+    NSLog(@"LCS P: %p Alloc newDemoConfig P:%p", DemoConfig.singleton, newDemoConfig);
     
     return YES;
 }
