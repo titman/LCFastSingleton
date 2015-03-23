@@ -1,7 +1,7 @@
 # LCFastSingleton
 LCFastSingleton allows you to create singletons by a impressively quick way, and centrally manage them, without needing you to enter any other code.
 
-#### If you have used this way to create a singleton case.
+#### If you have used this way to create singletons.
 
     static XXX * xx = nil;
     if (!xx) {
