@@ -63,7 +63,7 @@
     DemoConfig * newDemoConfig = [[DemoConfig alloc] init];
     
     
-    // The singleton is safe if the pointer is the same.
+    // The singleton is safely if the pointer same.
     NSLog(@"LCS P: %p Alloc newDemoConfig P:%p", DemoConfig.singleton, newDemoConfig);
     
     return YES;
