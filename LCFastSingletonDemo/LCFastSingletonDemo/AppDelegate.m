@@ -10,7 +10,7 @@
 #import "NSObject+LCFastSingleton.h"
 
 
-@interface DemoConfig : NSObject
+@interface DemoConfig : NSObject <FastSingleton>
 
 @property(assign) NSInteger id;
 @property(assign) NSInteger type;

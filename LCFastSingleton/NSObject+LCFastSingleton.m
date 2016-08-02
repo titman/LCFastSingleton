@@ -48,28 +48,34 @@ static NSMutableDictionary * __instanceDatasource = nil;
 {
     @synchronized(__instanceDatasource){
         
+        if (![[self class] conformsToProtocol:@protocol(LC_SINGLETON_CUSTOM_PROTOCOL_NAME)]) {
+            
+            NSLog(@"[FastSingleton] %@ didn't conforms to singleton protocol.", [self class]);
+            NSLog(@"[FastSingleton] %@ didn't conforms to singleton protocol.", [self class]);
+            NSLog(@"[FastSingleton] %@ didn't conforms to singleton protocol.", [self class]);
+            return nil;
+        }
+        
         NSMutableDictionary * datasource = self.shareInstanceDatasource;
         
         NSString * selfClass = [[self class] description];
         
         id __singleton__ = datasource[selfClass];
         
-        if (datasource[selfClass]) {
+        if (__singleton__) {
             return __singleton__;
         }
         
-        MethodSwizzleClass([self class], @selector(allocWithZone:), @selector(allocWithZoneSwizzled:));
-        MethodSwizzle([self class], @selector(init), @selector(initSwizzled));
-        MethodSwizzle([self class], @selector(description), @selector(descriptionSwizzled));
+        //        MethodSwizzleClass([self class], @selector(allocWithZone:), @selector(allocWithZoneSwizzled:));
+        //        MethodSwizzle([self class], @selector(init), @selector(initSwizzled));
+        //        MethodSwizzle([self class], @selector(description), @selector(descriptionSwizzled));
         
-        __singleton__ = [[self alloc] init];
+        __singleton__ = [[[self class] alloc] init];
         [__singleton__ singletonInit];
         
         [[self class] setObjectToInstanceDatasource:__singleton__];
-
         
-
-        NSLog(@"[LCFastSingleton] %@ singleton inited.",[__singleton__ class]);
+        //NSLog(@"[LCFastSingleton] %@ singleton inited.",[__singleton__ class]);
         
         return __singleton__;
         
@@ -121,7 +127,7 @@ void MethodSwizzle(Class aClass, SEL orig_sel, SEL alt_sel)
         class_replaceMethod(aClass, alt_sel, method_getImplementation(orig_method), method_getTypeEncoding(orig_method));
     }
     else{
-     
+        
         // If both are found, swizzle them
         if ((orig_method != nil) && (alt_method != nil)) {
             method_exchangeImplementations(orig_method, alt_method);
