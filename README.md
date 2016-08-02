@@ -37,3 +37,6 @@ LCFastSingleton allows you to create singletons by a impressively quick way, and
     #define LC_SINGLETON_CUSTOM_METHOD_NAME singleton // You can custom the method name, for example: "singleton".
 
     
+#### You can also open the protocol verify on .h file. 
+
+    #define LC_SINGLETON_PROTOCOL_VERIFY YES
