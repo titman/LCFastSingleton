@@ -48,7 +48,7 @@ static NSMutableDictionary * __instanceDatasource = nil;
 {
     @synchronized(__instanceDatasource){
         
-        if (![[self class] conformsToProtocol:@protocol(LC_SINGLETON_CUSTOM_PROTOCOL_NAME)]) {
+        if (LC_SINGLETON_PROTOCOL_VERIFY == YES && ![[self class] conformsToProtocol:@protocol(LC_SINGLETON_CUSTOM_PROTOCOL_NAME)]) {
             
             NSLog(@"[FastSingleton] %@ didn't conforms to singleton protocol.", [self class]);
             NSLog(@"[FastSingleton] %@ didn't conforms to singleton protocol.", [self class]);

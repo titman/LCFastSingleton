@@ -32,10 +32,13 @@
 
 #import <Foundation/Foundation.h>
 
-#define LC_SINGLETON_CUSTOM_PROTOCOL_NAME FastSingleton // You can custom the protocol name, for example: "FastSingleton".
-#define LC_SINGLETON_CUSTOM_METHOD_NAME   singleton // You can custom the method name, for example: "singleton".
+#define LC_SINGLETON_PROTOCOL_VERIFY NO
 
-@protocol LC_SINGLETON_CUSTOM_PROTOCOL_NAME
+// Custom method / protocol name.
+#define LC_SINGLETON_CUSTOM_PROTOCOL_NAME FastSingleton // could can custom the protocol name, for example: "FastSingleton".
+#define LC_SINGLETON_CUSTOM_METHOD_NAME   singleton // You could custom the method name, for example: "singleton".
+
+@protocol LC_SINGLETON_CUSTOM_PROTOCOL_NAME // You could open LC_SINGLETON_PROTOCOL_VERIFY for application safety.
 
 @end
 
